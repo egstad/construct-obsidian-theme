@@ -1,0 +1,22 @@
+{
+	"name": "obsidian-construct-theme",
+	"version": "1.0.0",
+	"scripts": {
+		"version": "node version-bump.mjs && git add manifest.json versions.json",
+		"dev": "sass --watch scss/_theme.scss:./theme.css"
+	},
+	"description": "This is a sample theme for Obsidian ([https://obsidian.md](https://obsidian.md/)).",
+	"main": "index.js",
+	"keywords": [
+		"obsidian",
+		"theme",
+		"scss",
+		"sass",
+		"css"
+	],
+	"author": "Jordan Egstad",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.66.1"
+	}
+}

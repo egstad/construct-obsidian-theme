@@ -1,0 +1,47 @@
+pre,
+.HyperMD-codeblock {
+	--code-normal: var(--color-base-80);
+	font-size: var(--font-small) !important;
+	line-height: 24px;
+	font-variation-settings: "MONO" 1;
+	background-color: var(--color-base-05) !important;
+}
+
+/* border around code blocks */
+.cm-preview-code-block {
+	background-color: var(--color-base-05) !important;
+	border-radius: 4px;
+}
+
+.tasks-layout-short-mode {
+	padding-left: var(--size-4-4) !important;
+}
+
+.tasks-count {
+	font-variation-settings: "wght" 400, "MONO" 1 !important;
+	font-size: var(--font-smallest);
+	line-height: 16px;
+	padding-bottom: 12px;
+	letter-spacing: 0.1em !important;
+	word-spacing: 0.05em !important;
+	text-transform: uppercase;
+}
+
+.callout {
+	padding-top: calc(var(--p-spacing) * 2);
+}
+
+a.tag,
+.cm-hashtag {
+	font-variation-settings: "wght" 400, "MONO" 1 !important;
+	margin-left: 0.125em;
+	margin-right: 0.125em;
+	// --tag-background: var(--divider-color) !important;
+	// --tag-color: var(--text-normal) !important;
+}
+
+.cm-hmd-frontmatter {
+	font-variation-settings: "wght" 400, "MONO" 1 !important;
+	font-size: var(--font-smaller);
+	line-height: 24px;
+}

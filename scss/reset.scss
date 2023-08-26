@@ -1,0 +1,15 @@
+* {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: "kern" 1, "pnum" 1, "liga" 1;
+	font-kerning: normal;
+	font-synthesis: none;
+	font-family: "diatype-variable" !important;
+}
+
+@font-face {
+	src: url("https://type.cargo.site/files/CargoDiatypePlusVariable.woff2");
+	font-family: "diatype-variable";
+}

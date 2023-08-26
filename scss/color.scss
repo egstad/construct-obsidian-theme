@@ -1,0 +1,67 @@
+// link to obsidian foundation variables:
+// https://docs.obsidian.md/Reference/CSS+variables/CSS+variables#Foundations
+
+.theme-dark {
+	// Border thicknesses applied to UI elements.
+	--border-width: 1px;
+
+	// base colors
+	// https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors#Base+colors
+	// main doc background
+	--color-base-00: #000000;
+	// no idea...
+	--color-base-05: #101010;
+	// templater background title
+	--color-base-10: #202120;
+	// sidebar and menu bar
+	--color-base-20: #000000;
+	// input background color
+	--color-base-25: #313232;
+	// sidebar and menu bar color when active
+	--color-base-30: #313232;
+	// radio/toggle inactive background color
+	--color-base-35: #313232;
+	// focus color modal border color
+	--color-base-40: #313232;
+	// caret, checkbox, settings title
+	--color-base-50: #757676;
+	// no idea...
+	--color-base-60: #8f9190;
+	// small ui text, icons
+	--color-base-70: #8f9190;
+	// default text color
+	--color-base-100: #c8cccb;
+
+	// accent color - leave this commented out so folks can choose this in the ui
+	// https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors#Accent+color
+	// --accent-h: 254;
+	// --accent-s: 80%;
+	// --accent-l: 68%;
+
+	// extended colors
+	// https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors#Extended+colors
+	--color-red: #e63b47;
+	--color-orange: #e67344;
+	--color-yellow: #f5c56f;
+	--color-green: #53c386;
+	--color-cyan: #98d4f2;
+	--color-blue: #4474d9;
+	--color-purple: #7e64da;
+	--color-pink: #ec92c5;
+	--color-red-rgb: 230, 59, 71;
+	--color-orange-rgb: 230, 115, 68;
+	--color-yellow-rgb: 245, 197, 111;
+	--color-green-rgb: 83, 195, 134;
+	--color-cyan-rgb: 152, 212, 242;
+	--color-blue-rgb: 68, 116, 217;
+	--color-purple-rgb: 126, 100, 218;
+	--color-pink-rgb: 236, 146, 197;
+
+	--text-normal: #b5b8b6;
+	--header-color: #c8cccb;
+}
+
+.callout {
+	// find a place later
+	background-color: rgba(var(--callout-color), 0.15);
+}
