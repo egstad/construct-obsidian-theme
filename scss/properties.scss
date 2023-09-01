@@ -1,0 +1,78 @@
+.metadata {
+	&-properties {
+		--metadata-label-font-size: var(--font-smaller);
+		--metadata-input-font-size: var(--font-smaller);
+		--icon-s: 14px;
+		--icon-size: 14px;
+		gap: 2px;
+
+		background-color: var(--color-base-05);
+		padding: 12px;
+		border-radius: calc(var(--metadata-property-radius) + 8px);
+
+		&-title {
+			font-size: var(--h6-size);
+			line-height: var(--h6-line-height);
+			@extend h6;
+			padding-top: 4px !important;
+		}
+	}
+
+	&-property {
+		--background-modifier-border: var(--color-base-05);
+		--metadata-input-background-active: var(--color-base-25);
+		transition: box-shadow 0.2s ease-out;
+	}
+
+	// key/value pairs
+	&-property-key-input,
+	&-property-value {
+		font-variation-settings: "MONO" 1 !important;
+	}
+}
+
+.multi-select-pill {
+	&-content {
+		margin-left: 12px;
+	}
+
+	&-remove-button {
+		.svg-icon {
+			--icon-size: 12px;
+			margin-left: 4px;
+			margin-right: 2px;
+			opacity: 0.5;
+			transition: rotate 0.2s ease-out, opacity 0.25s ease-out;
+		}
+
+		&:hover .svg-icon {
+			cursor: pointer;
+			rotate: 90deg;
+			opacity: 1;
+		}
+	}
+}
+
+.metadata-add-button {
+	--icon-size: 14px;
+	--icon-color-hover: rgba(var(--color-green-rgb), 1);
+	--pill-background-hover: rgba(var(--color-green-rgb), 0.15);
+
+	background-color: rgba(var(--color-green-rgb), 0.15);
+	color: rgba(var(--color-green-rgb), 0.8);
+	font-variation-settings: "MONO" 1 !important;
+	text-transform: uppercase;
+	margin-top: 16px !important;
+	transition: color 0.15s ease-out, background-color 0.15s ease-out;
+
+	&:hover {
+		cursor: pointer;
+		background: rgba(var(--color-green-rgb), 0.15);
+		color: rgba(var(--color-green-rgb), 1);
+	}
+
+	.text-button-label {
+		margin-left: 2px;
+		margin-top: 2px;
+	}
+}

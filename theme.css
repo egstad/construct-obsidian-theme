@@ -45,6 +45,7 @@
   --color-pink-rgb: 236, 146, 197;
   --text-normal: #b5b8b6;
   --header-color: #c8cccb;
+  --tag-background: hsla(var(--interactive-accent-hsl), 0.25);
 }
 
 .callout {
@@ -174,7 +175,7 @@ h5,
   }
 }
 
-h6,
+h6, .metadata-properties-title,
 .HyperMD-header-6 {
   --h6-size: 11px;
   --h6-line-height: 16px;
@@ -187,7 +188,7 @@ h6,
   color: var(--text-muted);
 }
 @media screen and (max-width: 640px) {
-  h6,
+  h6, .metadata-properties-title,
   .HyperMD-header-6 {
     --h6-size: 11px;
     --h6-line-height: 16px;
@@ -202,10 +203,7 @@ h3,
 h4,
 h5,
 h6,
-.cm-header-1,
-.cm-header-1,
-.cm-header-1,
-.cm-header-1,
+.metadata-properties-title,
 .cm-header-1,
 .HyperMD-header-1,
 .HyperMD-header-2,
@@ -242,7 +240,7 @@ h6,
 pre,
 .HyperMD-codeblock {
   --code-normal: var(--color-base-80);
-  font-size: var(--font-small) !important;
+  font-size: var(--font-smaller) !important;
   line-height: 24px;
   font-variation-settings: "MONO" 1;
   background-color: var(--color-base-05) !important;
@@ -283,6 +281,67 @@ a.tag,
   font-variation-settings: "wght" 400, "MONO" 1 !important;
   font-size: var(--font-smaller);
   line-height: 24px;
+}
+
+.metadata-properties {
+  --metadata-label-font-size: var(--font-smaller);
+  --metadata-input-font-size: var(--font-smaller);
+  --icon-s: 14px;
+  --icon-size: 14px;
+  gap: 2px;
+  background-color: var(--color-base-05);
+  padding: 12px;
+  border-radius: calc(var(--metadata-property-radius) + 8px);
+}
+.metadata-properties-title {
+  font-size: var(--h6-size);
+  line-height: var(--h6-line-height);
+  padding-top: 4px !important;
+}
+.metadata-property {
+  --background-modifier-border: var(--color-base-05);
+  --metadata-input-background-active: var(--color-base-25);
+  transition: box-shadow 0.2s ease-out;
+}
+.metadata-property-key-input, .metadata-property-value {
+  font-variation-settings: "MONO" 1 !important;
+}
+
+.multi-select-pill-content {
+  margin-left: 12px;
+}
+.multi-select-pill-remove-button .svg-icon {
+  --icon-size: 12px;
+  margin-left: 4px;
+  margin-right: 2px;
+  opacity: 0.5;
+  transition: rotate 0.2s ease-out, opacity 0.25s ease-out;
+}
+.multi-select-pill-remove-button:hover .svg-icon {
+  cursor: pointer;
+  rotate: 90deg;
+  opacity: 1;
+}
+
+.metadata-add-button {
+  --icon-size: 14px;
+  --icon-color-hover: rgba(var(--color-green-rgb), 1);
+  --pill-background-hover: rgba(var(--color-green-rgb), 0.15);
+  background-color: rgba(var(--color-green-rgb), 0.15);
+  color: rgba(var(--color-green-rgb), 0.8);
+  font-variation-settings: "MONO" 1 !important;
+  text-transform: uppercase;
+  margin-top: 16px !important;
+  transition: color 0.15s ease-out, background-color 0.15s ease-out;
+}
+.metadata-add-button:hover {
+  cursor: pointer;
+  background: rgba(var(--color-green-rgb), 0.15);
+  color: rgba(var(--color-green-rgb), 1);
+}
+.metadata-add-button .text-button-label {
+  margin-left: 2px;
+  margin-top: 2px;
 }
 
 /*# sourceMappingURL=theme.css.map */
