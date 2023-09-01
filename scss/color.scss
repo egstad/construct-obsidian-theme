@@ -61,9 +61,15 @@
 	--header-color: #c8cccb;
 
 	--tag-background: hsla(var(--interactive-accent-hsl), 0.25);
+	--titlebar-background: var(--color-base-00);
+	--titlebar-background-focused: var(--color-base-00);
 }
 
 .callout {
 	// find a place later
 	background-color: rgba(var(--callout-color), 0.15);
+}
+
+.titlebar {
+	transition: all 0.4s ease-out;
 }
