@@ -59,6 +59,7 @@
 	--pill-background-hover: rgba(var(--color-green-rgb), 0.15);
 
 	background-color: rgba(var(--color-green-rgb), 0.15);
+	border-radius: calc(var(--metadata-property-radius));
 	color: rgba(var(--color-green-rgb), 0.8);
 	font-variation-settings: "MONO" 1 !important;
 	text-transform: uppercase;
