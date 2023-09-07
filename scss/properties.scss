@@ -92,8 +92,10 @@
 	--icon-size: 14px;
 	--icon-color-hover: rgba(var(--color-green-rgb), 1);
 
-	background-color: var(--pill-background);
 	color: var(--color-accent);
+	background-color: rgba(var(--color-green-rgb), 0.15);
+	border-radius: calc(var(--metadata-property-radius));
+	color: rgba(var(--color-green-rgb), 0.8);
 	font-variation-settings: "MONO" 1 !important;
 	text-transform: uppercase;
 	margin-top: 16px !important;
