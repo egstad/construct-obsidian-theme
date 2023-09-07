@@ -45,3 +45,7 @@ a.tag,
 	font-size: var(--font-smaller);
 	line-height: 24px;
 }
+
+.cm-inline-code {
+	font-variation-settings: "wght" 400, "MONO" 1 !important;
+}

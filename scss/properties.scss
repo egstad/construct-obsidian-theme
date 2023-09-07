@@ -1,14 +1,45 @@
-.metadata {
-	&-properties {
+.metadata-container {
+	--pill-background: hsla(
+		var(--accent-h),
+		var(--accent-s),
+		var(--accent-l),
+		0.2
+	);
+	--pill-background-hover: hsla(
+		var(--accent-h),
+		var(--accent-s),
+		var(--accent-l),
+		0.15
+	);
+
+	background-color: var(--color-base-05);
+	padding: 12px;
+	border-radius: calc(var(--metadata-property-radius) + 8px);
+	margin-bottom: 32px;
+
+	&.is-collapsed {
+		background-color: var(--color-base-05);
+	}
+
+	.metadata-properties-heading {
+		transition: margin 0.4s ease-out;
+
+		&.is-collapsed {
+			margin-bottom: 0;
+		}
+
+		.collapse-indicator {
+			left: -54px;
+			padding: 0 24px;
+		}
+	}
+
+	.metadata-properties {
 		--metadata-label-font-size: var(--font-smaller);
 		--metadata-input-font-size: var(--font-smaller);
 		--icon-s: 14px;
 		--icon-size: 14px;
 		gap: 2px;
-
-		background-color: var(--color-base-05);
-		padding: 12px;
-		border-radius: calc(var(--metadata-property-radius) + 8px);
 
 		&-title {
 			font-size: var(--h6-size);
@@ -18,15 +49,15 @@
 		}
 	}
 
-	&-property {
+	.metadata-property {
 		--background-modifier-border: var(--color-base-05);
 		--metadata-input-background-active: var(--color-base-25);
 		transition: box-shadow 0.2s ease-out;
 	}
 
 	// key/value pairs
-	&-property-key-input,
-	&-property-value {
+	.metadata-property-key-input,
+	.metadata-property-value {
 		font-variation-settings: "MONO" 1 !important;
 	}
 }
@@ -34,14 +65,18 @@
 .multi-select-pill {
 	&-content {
 		margin-left: 12px;
+		color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 	}
 
 	&-remove-button {
+		margin-right: 4px;
+
 		.svg-icon {
 			--icon-size: 12px;
 			margin-left: 4px;
 			margin-right: 2px;
 			opacity: 0.5;
+			stroke: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 			transition: rotate 0.2s ease-out, opacity 0.25s ease-out;
 		}
 
@@ -56,14 +91,17 @@
 .metadata-add-button {
 	--icon-size: 14px;
 	--icon-color-hover: rgba(var(--color-green-rgb), 1);
-	--pill-background-hover: rgba(var(--color-green-rgb), 0.15);
 
-	background-color: rgba(var(--color-green-rgb), 0.15);
-	color: rgba(var(--color-green-rgb), 0.8);
+	background-color: var(--pill-background);
+	color: var(--color-accent);
 	font-variation-settings: "MONO" 1 !important;
 	text-transform: uppercase;
 	margin-top: 16px !important;
 	transition: color 0.15s ease-out, background-color 0.15s ease-out;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 
 	&:hover {
 		cursor: pointer;

@@ -57,12 +57,14 @@
 	--color-purple-rgb: 126, 100, 218;
 	--color-pink-rgb: 236, 146, 197;
 
-	--text-normal: #b5b8b6;
+	--text-normal: #9a9d9b;
 	--header-color: #c8cccb;
 
 	--tag-background: hsla(var(--interactive-accent-hsl), 0.25);
 	--titlebar-background: var(--color-base-00);
 	--titlebar-background-focused: var(--color-base-00);
+
+	--background-modifier-form-field: var(--color-base-05);
 }
 
 .callout {
